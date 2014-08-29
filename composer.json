@@ -1,0 +1,14 @@
+{
+    "name": "hamaryuginh/smartfocus-api",
+    "description": "A PHP Api to manage your SmartFocus data",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamaryuginh",
+            "email": "fabien.verloo@free.fr"
+        }
+    ],
+    "require": {
+
+    }
+}

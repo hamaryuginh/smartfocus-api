@@ -1,7 +1,16 @@
 <?php
 
-require_once( '_autoloader.php' );
+//require_once( '_autoloader.php' );
+require_once( '../src/SmartFocus.php' );
 
-use SmartFocus\Core\Auth\Auth;
+$login = 'motoblouz_api';
+$pwd = 'motoblouzpwd_1';
+$key = 'CdX7Cr5L4kWAk0xSRdgQuoqOEjEFeNKxhke4EZkGaaED_5YezHA';
 
-$auth = new Auth(array('server' => 'hama.emv3.com', 'mouth' => 'Boufmouth'));
+$smartFocus = new SmartFocus('emvapi.emv3.com');
+
+/*
+ * Test connection
+ */
+$res = $smartFocus->auth->openApiConnection($login, $pwd, $key);
+print_r($res);

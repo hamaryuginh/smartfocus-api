@@ -2,5 +2,5 @@
 
 require( '_SplClassLoader.php' );
 
-$loader = new SplClassLoader( 'SmartFocus', '../' );
+$loader = new SplClassLoader( 'SmartFocus', '../src/' );
 $loader->register();
